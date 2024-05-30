@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="description" content="Manage your university now with UMS"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>UMS</title>
+        <link rel="stylesheet" href="/css/login.css">
+        <link class="ico" rel="icon" type="image/png" href="/imges/horus.png">
+    </head>
+    <body>
+        <div class="body">
+            <div class="message">
+                <h1>Hello</h1>
+                <br>
+                <h3>log in with your university name to access and manage all institutional data</h3>
+            </div>
+            <div class="login">
+                <form action="/login.html" method="get">
+                    <div id="email">
+                        <label for="em"><b>Email</b></label>
+                        <input title="Please type Admin email" class="data" id="em" type="email" name="email" autocomplete="off" required>
+                    </div>
+                    <br>
+                    <div id="password">
+                        <label for="pass"><b>Admin password</b></label>
+                        <input title="Please type your password" class="data" id="pass" type="password" name="pass" minlength="8" autocomplete="off" required>
+                    </div>
+                        <input type="submit" value="login" class="sub">
+                </form>
+                <p>don't have an account <a href="/register.html" class="reg">Register</a></p>
+            </div>
+    </div>
+    </body>
+</html>

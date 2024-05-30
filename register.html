@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="description" content="Manage your university now with UMS"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>UMS</title>
+        <link rel="stylesheet" href="/css/register.css">
+        <link rel="icon" href="/imges/horus.png">
+    </head>
+    <body>
+        <header>
+                    <a href="login.html" class="bot">Login</a>
+                    <a href="home.html"><img src="/imges/horus.png" alt="Horus" id="logo"></a>
+                    <a href="register.html" class="bot">Register</a>
+        </header>
+        <div class="body">
+            <div id="message">
+                <h1>Register</h1>
+                <br>
+                <h3>Get your University account now</h3>
+            </div>
+                <div id="reg">
+                <form action="/register.html" method="get">
+                    <div id="username">
+                        <label for="name"><b>University name</b></label>
+                        <input title="Please type UNI name" class="data" id="name" type="text" name="user" autocomplete="off" placeholder="MTI" autofocus required>
+                    </div>
+                    <div id="password1">
+                        <label for="pass1"><b>Password</b></label>
+                        <input title="Please inter your password" class="data" id="pass1" minlength="10" type="password" name="pass1" autocomplete="off" placeholder="More than 10 chars" required>
+                    </div>
+                    <div id="password2">
+                        <label for="pass2"><b>Re-enter Password</b></label>
+                        <input title="Please inter your password" class="data" id="pass2" minlength="10" type="password" name="pass2" autocomplete="off" placeholder="Same password" required>
+                    </div>
+                    <div id="email">
+                        <label for="em"><b>Email</b></label>
+                        <input title="Please enter your email" class="data" id="em" type="email" name="em" autocomplete="off" placeholder="Example@gmail.com" required>
+                    </div>
+
+                    <div id="count">
+                        <label for="conlis" class="hate"><b>Select your school country</b></label>
+                        <select name="Country" id="conlis">
+                            <option value="EGY">Egypt</option>
+                            <option value="GER">Germany</option>
+                            <option value="SPR">Spain</option>
+                            <option value="ITA">Italy</option>
+                            <option value="USA">Usa</option>
+                        </select>
+                    </div>
+                    <input type="submit" value="Register" id="sub">
+                </form>
+                <p>Have an account <a href="/login.html" id="log">Login</a></p>
+            </div>
+        </div>
+    </body>
+</html>
