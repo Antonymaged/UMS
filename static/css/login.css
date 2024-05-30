@@ -1,6 +1,6 @@
 body{
     background-repeat: no-repeat;
-    background-image: url("../imges/login.jpg");
+    background-image: url("/static/imges/login.jpg");
     /* background-size: 1520px  920px; */
     background-size: 100% 100%;
     background-attachment: fixed;
