@@ -1,0 +1,106 @@
+body{
+    background-repeat: no-repeat;
+    background-image: url("../imges/login.jpg");
+    /* background-size: 1520px  920px; */
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+h3,
+h1{
+    margin-top: 5px;
+    display: inline-block;
+    border: solid;
+    border-color: transparent;
+    background-color: rgba(0,0,0,0.3);
+    border-radius: 5px;
+}
+form{
+    padding-top: 20px;
+}
+label{
+    font-family: 'Montserrat', sans-serif;
+}
+.body{
+    text-align:center;
+    color: white;
+    border-radius: 50px;
+    backdrop-filter: blur(10px);
+    background-color: rgba(0,30,30,0.2);
+    padding: 20px;
+    height: 400px;
+}
+.message{
+    height: 100px;
+    /* font-family: 'Montserrat', sans-serif; */
+    font-style: italic;
+}
+.data{
+    display: block;
+    margin: auto;
+    text-align: center;
+    /* margin-bottom: 20px; */
+    width: 30%;
+    height: 20px;
+    background: transparent;
+    border: solid;
+    border-width: 2px;
+    border-radius: 10px;
+    color: white;
+    border-color: cyan;
+    transition: 0.5s;
+}
+.sub{
+    border-radius: 5px;
+    border: solid;
+    width: 70px;
+    height: 25px;
+    border-color: white;
+    margin-bottom: 20px;
+    transition: 0.5s;
+}
+#password{
+    margin-bottom: 30px;
+}
+#email,
+#password
+/* #username{ */{
+    padding-bottom: 10px;
+}
+#email label,
+#password label/* ,#username label{ */{
+    background-color: rgba(0,0,0,0.3);
+    border-radius: 5px;
+    padding: 0px 5px;
+}
+.reg{
+    color:white;
+    border-radius: 8px;
+    display: inline-block;
+    text-decoration: none;
+    border: solid;
+    border-color: black;
+    background-color: black;
+    transition: 0.5s;
+}
+.reg:hover{
+    color: black;
+    border-color: white;
+    background-color: white;
+    transition: 0.5s;
+}
+.sub:hover{
+    background-color: black;
+    color: white;
+    border-color: black;
+    transition: 0.5s;
+}
+.data:hover{
+    width: 55%;
+    border-color: blue;
+    transition: 0.5s;
+}

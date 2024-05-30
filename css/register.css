@@ -1,0 +1,129 @@
+body{
+    background-repeat: no-repeat;
+    background-image: url(/imges/hercules-hall-surrounded-by-greenery-sunlight-daytime-munich-germany.jpg);
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+.body{
+    text-align: center;
+    color: wheat;
+    background-color: rgba(0,30,30,0.3);
+    backdrop-filter: blur(7px);
+    border-radius: 50px;
+    height: 400px;
+    width: 500px;
+    padding: 20px;
+    margin: auto;
+}
+.data{
+    display: block;
+    margin: auto;
+    margin-bottom: 10px;
+    background: transparent;
+    border: solid;
+    border-radius: 20px;
+    border-width: 2px;
+    width: 30%;
+    height: 20px;
+    transition: 0.5s;
+    color:white;
+    border-color: aqua;
+    text-align: center;
+}
+header{
+    text-align: center;
+    margin-bottom: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    height: 135px;
+    margin-top: -8px;
+    margin-right: -8px;
+    margin-left: -8px;
+}
+label{
+    font-family: 'Montserrat', sans-serif;
+}
+select{
+    margin-bottom: 10px;
+    background-color: cyan;   
+    transition: 0.5s;
+}
+select,
+p{
+    border-radius: 20px;
+}
+h3,
+h1{
+    display: inline-block;
+    border: solid;
+    border-radius: 20px;
+    border-color: transparent;
+    border-width: 4px;
+    background-color: rgba(0,50,50,0.3);
+}
+h1{
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+a{
+    text-decoration: none;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0px;
+    width: 150px;
+    
+}
+.bot{
+    color: cyan;
+    transition: 0.5s;
+    font-size: 30px;
+}
+#log{
+    display: inline-block;
+    text-decoration: none;
+    border: solid;
+    border-radius: 10px;
+    border-width: 3px;
+    width: 50px;
+    margin-left: 5px;
+    color: cyan;
+    transition: 0.5s;
+}
+#logo{
+    width: 130px;
+    transition: 0.5s;  
+}
+#sub{
+    color: black;
+    background-color: rgba(0, 255, 255, 0.4);
+    border: solid;
+    border-color: rgba(0, 255, 255);
+    border-radius: 5px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+#logo:hover{
+    width: 150px;
+    transition: 0.5s;
+}
+#sub:hover{
+    background-color: white;
+    border-color: white;
+    transition: 0.5s;
+}
+.data:hover{
+    width: 60%;
+    border-color: rgb(229, 23, 23);
+    border-color: wheat;
+    transition: 0.5s;
+}
+.bot:hover{
+    transition: 0.5s;
+}
+a:hover{
+    color: white;
+    transition: 0.5s;
+}
+select:hover{
+    background-color: white;
+    transition: 0.5s;
+}

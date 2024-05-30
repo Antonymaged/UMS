@@ -1,0 +1,173 @@
+body {
+    color: #ffffff;
+    background-color: rgb(30,30,30);
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+header {
+    /* padding-bottom: 0.5px;
+    padding-top: 0.5px; */
+    background-color: rgb(30,30,30);
+    color: white;
+}
+span{
+    width: 50%;
+}
+nav li {
+    font-size: 40px;
+    font-style: strong;
+    margin-right: 70%;
+}
+nav ul {
+    margin:0% 1% 2%;
+    text-align: end;
+    list-style-type: none;
+    padding: 0;
+    height: 100px;
+    /* position: relative; */
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 1rem;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+section {
+    margin-bottom: 2rem;
+    height: 900px;
+    margin-bottom: 200px;
+}
+.container{
+    position: relative;
+}
+.text{
+    position: relative;
+    top: 50%;
+    left: 25%;
+    transform: translate(-25%, -50%);
+}
+.char{
+    padding-left: 2rem;
+    text-align: left;
+    display:flex;
+    justify-content:space-around;
+}
+.char span img{
+    width: 90%;
+    height: 90%;
+}
+p{
+    margin-top: 0%;
+    margin-left: 50px;
+    opacity: 80%;
+    color:white;
+}
+h1{
+    font-size: 35px;
+    margin-top: -15%;
+    margin-left: 50px;
+}
+h2 {
+    margin-bottom: 0%;
+    margin-top: 0%;
+    text-align: center;
+    margin-right: 50px;
+}
+.linked{
+    position: absolute;
+    display:block;
+    text-decoration: none;
+    color:white;
+    left: 300px;
+    transition: 0.5s;
+}
+.git{
+        position: absolute;
+        display:block;
+        text-decoration: none;
+        color:white;
+        left: 600px;
+        transition: 0.5s;
+}
+.email{
+    position: absolute;
+    display:block;
+    text-decoration: none;
+    color:white;
+    left: 900px;
+    transition: 0.5s;
+    margin: 0;
+    padding: 0;
+}
+.phone{
+    position: absolute;
+    display:block;
+    text-decoration: none;
+    color:white;
+    left: 1200px;
+    transition: 0.5s;
+    margin: 0;
+    padding: 0;
+}
+footer {
+    padding-top: 1%;
+    padding-bottom: 1%;
+    background: black;
+    text-align: center;
+    height: 200px;
+    position: relative;
+}
+a{
+    display: inline;
+    vertical-align:middle;
+}
+.sec{
+    margin-bottom: 10rem;
+}
+.cp{
+    position: absolute;
+    bottom: 0;
+    right: 635px;
+}
+#logo{
+    display: inline-block;
+    width: 100px;
+    transition: 0.5s;
+    position: absolute;
+    left: 0;
+    /* padding-bottom:100px ; */
+}
+#sec,
+#man,
+#time{
+    border-radius: 50px;
+    width: 400px;
+    height: 300px;
+}
+.log{
+    display: inline-block;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+.linked:hover{
+    color: cyan;
+    transition: 0.5s;
+}
+.git:hover{
+    color: cyan;
+    transition: 0.5s;
+}
+#logo:hover{
+    width: 130px;
+    transition: 0.5s;
+}
+nav ul li a:hover {
+    color:aqua;
+    text-decoration: none;
+    transition: 0.5s;
+}
