@@ -6,12 +6,44 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <title>UMS</title>
         <link type="ico" rel="icon" href="/static/imges/horus.png"/>
+        <link rel="stylesheet" href="/static/css/main.css">
     </head>
     <body>
         <header>
-            <button>Add</button>
-            <button>Delete</button>
-            <button>Edit</button>
+            <form action="/add" method="POST">
+                <button class="but">Add</button>
+            </form>
+            <form action="/del" method="POST">
+                <button class="but">Delete</button>
+            </form>
+            <form action="/edi" method="POST">
+                <button class="but">Edit</button>
+            </form>
         </header>
+        <center>
+            <h3>Students records</h3>
+            <table>
+                <tr>
+                    <th>Id</th>
+                    <th>Name</th>
+                    <th>Factuly</th>
+                    <th>Level</th>
+                    <th>Age</th>
+                    <th>GPA</th>
+                    <th>Cources</th>
+                </tr>
+                {% for record in records %}
+                <tr>
+                    <td>{{ record.stu_id }}</td>
+                    <td>{{ record.stu_name }}</td>
+                    <td>{{ record.stu_fac }}</td>
+                    <td>{{ record.stu_lev }}</td>
+                    <td>{{ record.stu_age }}</td>
+                    <td>{{ record.stu_gpa }}</td>
+                    <td>{{ record.stu_numcor }}</td>
+                </tr>
+                {% endfor %}
+            </table>
+        </center>
     </body>
 </html>

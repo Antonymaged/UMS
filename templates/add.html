@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="description" content="Manage your university now with UMS"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="icon" type="ico" href="/static/imges/horus.png"/>
+        <link rel="stylesheet" href="/static/css/add.css">
+    </head>
+    <body>
+        <center>
+            <form action="/ad" method="POST">
+                <label for="name">Student name</label>
+                <input type="text" id="name" title="Please type Student name" name="sn" autocomplete="off" required>
+                <br>
+                <label for="fac">Student fuctuly</label>
+                <input type="text" id="fac" title="Please type Student fuctuly" name="facn" autocomplete="off" required>
+                <br>
+                <label for="lev">Student level</label>
+                <input type="number" class="f" id="lev" title="Please type Student level" min="1" max="5" name="slev" autocomplete="off" required>
+                <br>
+                <label for="age">Student age</label>
+                <input type="number" class="f" id="age" title="Please type Student age" name="sage" min="15" max="50" autocomplete="off" required>
+                <br>
+                <label for="gpa">Student GPA</label>
+                <input type="number" class="f" id="gpa" title="Please type Student GPA" name="sgpa" min="0" max="4" autocomplete="off" required>
+                <br>
+                <label for="noc">Student cources</label>
+                <input type="number" class="f" id="noc" title="Please type Student cources" name="snoc" min="1" max="7" autocomplete="off" required>
+                <br>
+                <input type="submit" id="sub">
+            </form>
+        </center>
+    </body>
+</html>
