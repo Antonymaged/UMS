@@ -1,24 +1,35 @@
 body{
-    background-color: antiquewhite;
+    background-color: rgb(34, 37, 37);
 }
 label{
     display :flex ;
     margin-left: 600px;
     margin-top: 20px;
+    color: aquamarine;
 }
 input{
     border-radius: 5px;
     border: solid 2px;
     margin: 5px 0px;
+    background-color: aquamarine;
+    transition: 0.5s;
 }
 .f{
     width: 160px;
 }
+.inp{
+    width: 150px;
+    transition: 0.5s;
+}
+.inp:hover{
+    width: 200px;
+    transition: 0.5s;
+}
 #sub{
-    background-color: white;
+    background-color: aquamarine;
     transition: 0.5s;
 }
 #sub:hover{
-    background-color: aquamarine;
+    background-color: white;
     transition: 0.5s;
 }

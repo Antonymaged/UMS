@@ -96,10 +96,11 @@ def add():
 def ad():
     name = session.get('var')
     engine = create_engine('sqlite:///data/{}.db'.format(name), echo=False)
-    rec = University(request.form['sn'],request.form['facn'],request.form['slev'],request.form['sage'],request.form['sgpa'],request.form['snoc'])
     sassion = sessionmaker()(bind = engine)
+    rec = University(request.form['sn'],request.form['facn'],request.form['slev'],request.form['sage'],request.form['sgpa'],request.form['snoc'])
     sassion.add(rec)
     sassion.commit()
+    redirect("/a")
     sassion.close()
     return redirect("/main")
 
@@ -113,14 +114,16 @@ def ed():
     engine = create_engine('sqlite:///data/{}.db'.format(name), echo=False)
     sassion = sessionmaker()(bind = engine)
     id = sassion.query(University).filter_by(stu_id = request.form['sid']).first()
-    print(id.stu_name)
-    id.stu_name=request.form['sn']
-    id.stu_fac=request.form['facn']
-    id.stu_lev=request.form['slev']
-    id.stu_age=request.form['sage']
-    id.stu_gpa=request.form['sgpa']
-    id.stu_numcor=request.form['snoc']
-    sassion.commit()
+    if id:
+        id.stu_name=request.form['sn']
+        id.stu_fac=request.form['facn']
+        id.stu_lev=request.form['slev']
+        id.stu_age=request.form['sage']
+        id.stu_gpa=request.form['sgpa']
+        id.stu_numcor=request.form['snoc']
+        sassion.commit()
+    else:
+        pass
     sassion.close()
     return redirect("/main")
 
@@ -134,9 +137,13 @@ def de():
     engine = create_engine('sqlite:///data/{}.db'.format(name), echo=False)
     sassion = sessionmaker()(bind = engine)
     id = sassion.query(University).filter_by(stu_id = request.form['sid']).first()
-    sassion.delete(id)
-    sassion.commit()
+    if id:
+        sassion.delete(id)
+        sassion.commit()
+    else:
+        pass
+    sassion.close()
     return redirect("/main")
 
 Session.close()
-app.run(debug=True,port=5500)
+app.run(debug=True,port=80)
