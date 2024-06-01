@@ -146,4 +146,4 @@ def de():
     return redirect("/main")
 
 Session.close()
-app.run(debug=True,port=80)
+app.run(port=80)

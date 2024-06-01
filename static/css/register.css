@@ -33,7 +33,7 @@ body{
 header{
     text-align: center;
     margin-bottom: 20px;
-    background-color: rgba(0, 0, 0, 0.7);
+    /* background-color: rgba(0, 0, 0, 0.7); */
     height: 135px;
     margin-top: -8px;
     margin-right: -8px;
