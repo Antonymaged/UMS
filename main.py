@@ -1,8 +1,8 @@
-from sqlalchemy.orm import sessionmaker
+#!/usr/bin/python3
 from time import sleep
 from flask import Flask,render_template, request, redirect, session
 from sqlalchemy import create_engine, Integer, Double, String, Column
-from sqlalchemy.orm import declarative_base
+from sqlalchemy.orm import declarative_base, sessionmaker
 # from flask_wtf import wtforms
 # from wtforms import StringField, PasswordField, SubmitField
 import log
@@ -146,4 +146,5 @@ def de():
     return redirect("/main")
 
 Session.close()
-app.run(debug=True,port=80)
+if __name__=="__main__":
+    app.run(host='0.0.0.0',port=5000)
